@@ -1,3 +1,5 @@
 npm i - To install or audit all dependencies that are present in package.json file.
 ctrl z - to terminate the on going server in terminal
-
+command + D - To select same words one after another
+command +shift + L - To select all same words together
+comments - command + /
