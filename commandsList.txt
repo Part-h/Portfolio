@@ -1,0 +1,3 @@
+npm i - To install or audit all dependencies that are present in package.json file.
+ctrl z - to terminate the on going server in terminal
+
