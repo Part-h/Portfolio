@@ -3,3 +3,4 @@ ctrl z - to terminate the on going server in terminal
 command + D - To select same words one after another
 command +shift + L - To select all same words together
 comments - command + /
+option + arrow - to move the line of the code in direction of arrow
