@@ -138,6 +138,72 @@ h2 {
   display: flex;
   align-items: flex-start;
 }
+/* Navbar style start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 85.333px;
+  background: var(--white);
+  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar--items > ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 42.667px;
+  text-decoration: none;
+}
+
+.navbar--items ul > li > a {
+  text-decoration: none;
+  position: relative;
+  color: var(--darkblue);
+  transition: color 0.3s ease; /* Add transition effect for color change */
+}
+
+.navbar--items ul > li > a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  transform: scaleX(0); /* Initial state for the animation */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease; /* Add transition effect for the animation */
+}
+
+.navbar--items ul > li > a:hover {
+  color: var(--primary); /* Change text color on hover */
+}
+
+.navbar--items ul > li:hover {
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Navbar Content */
+.navbar--content {
+  color: var(--darkblue);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.navbar--active-content {
+  color: var(--primary);
+}
+/* Navbar Styler Ends */
+
+
 /* Hero Section Style */
 .hero--section{
   display: grid;
@@ -168,11 +234,65 @@ h2 {
   font-size: 74.667px;
   font-weight: 700;
   line-height: 90px;
-  align-self: stretch;
 }
-.hero--section--title--color{
+
+/* Animation effect for auto-writing and erasing */
+@keyframes autoWriteErase {
+  0% {
+    width: 0;
+    border-right-color: transparent;
+  }
+  20% {
+    width: 100%;
+    border-right-color: transparent;
+  }
+ 
+  50% {
+    width: 100%;
+    border-right-color: transparent;
+  }
+  75% {
+    width: 0;
+    border-right-color: transparent;
+  }
+  95% {
+    border-right-color: var(--cursor-color); /* Show cursor when text is fully erased */
+  }
+  100% {
+    width: 0;
+    border-right-color: transparent;
+  }
+}
+
+/* Apply the animation to .hero--section--title--color */
+.hero--section--title--color {
+  color: var(--primary);
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid transparent; /* Adjust border thickness as needed */
+  animation: autoWriteErase 5s infinite; /* Adjust the duration as needed */
+}
+
+/* Blinking cursor animation */
+@keyframes cursorBlink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Apply the cursor animation to .hero--section--title--color */
+.hero--section--title--color::after {
+  content: ""; /* Cursor character */
+  display: inline-block;
+  border-left: 2px solid var(--cursor-color); /* Cursor color */
+  margin-left: 4px; /* Adjust the spacing between text and cursor */
+  animation: cursorBlink 1s infinite; /* Adjust the duration as needed */
+}
+
+/* .hero--section--title--color{
   color:var(--primary);
-}
+} */
 .hero--section-description {
   color: var(--darkblue);
   font-size: 24px;
