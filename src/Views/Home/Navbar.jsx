@@ -54,7 +54,7 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="heroSection"
+              to="herosection"
               className="navbar--content"
             >
               Home
@@ -96,7 +96,7 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="testimonial"
+              to="herosection"
               className="navbar--content"
             >
               Testimonials
