@@ -264,6 +264,7 @@ object-fit: contain;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
 }
 .skills--section--description {
+  margin-top: 10px;
   color: var(--black);
   font-size: 21.3px;
   font-style: normal;
