@@ -1,23 +1,28 @@
 export default function HeroSection(){
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+    
+        if (section) {
+          // Scroll smoothly to the specified section
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
     return (
         <section id="herosection" className="hero--section">
             <div className="hero--section--content--box">
                 <div className="hero--section--content">
-                    <p className="section--title">Hey, I'm Parth</p>
+                    <p className="hero--section--title">Hey, I'm <span className="hero--section--name">Parth Patel</span>.</p>
                     <h1 className="hero--section--title">
-                        <span className="hero--section--title--color">Full Stack</span>{" "}
-                    <br/>
-                    Developer
+                        {/* <span className="hero--section--title--color">Full Stack</span>{" "} */}
                     </h1>
-                    <p className="hero--section-description">
-                            Lorem asdnasjkdnasnd askkdaksmdkasndas akmdkasda.
+                    <h1 className="hero--section--title">I'm a Full Stack Developer.</h1>
+                    {/* <p className="hero--section-description">
+                            
                         <br/> asdnmakkmdkam, asdokasodkmsdakmsa'.asdmalmdapmd
-                    </p>
+                    </p> */}
                 </div>
-                <button className="btn btn-primary">Get in touch</button>
-            </div>
-            <div className="hero--section--img">
-                <img src="./img/hero_img.png" alt="Hero Section"></img>
+                <button className="btn btn-outline-primary" onClick={() => scrollToSection('mySkills')}>View My Work</button>
+
             </div>
         </section>
     )
