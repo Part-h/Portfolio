@@ -34,7 +34,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div className="nav--signature">
-        <img src="./img/signature.png" alt="Logoipsum" />
+        <span className="font-face">Parth Patel</span>
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -68,10 +68,10 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="MyPortfolio"
+              to="MySkills"
               className="navbar--content"
             >
-              Portfolio
+              Passion
             </Link>
           </li>
           <li>
@@ -96,10 +96,10 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="herosection"
+              to="MyPortfolio"
               className="navbar--content"
             >
-              Testimonials
+              Portfolio
             </Link>
           </li>
         </ul>

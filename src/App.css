@@ -1,5 +1,15 @@
 /* Global CSS */
-
+@font-face {
+  font-family: "GoldmanBold";
+  src: local("GoldmanBold"),
+   url("./fonts/Kingsman.ttf") format("truetype");
+ }
+ .font-face{
+  font-family: "GoldmanBold";
+  font-size: 60px;
+  padding-top: 5px;
+  color: var(--heading-color);
+ }
 body{
   margin:0;
   font-family: "Roboto", sans-serif;
@@ -152,13 +162,10 @@ h2 {
   right: 0;
 
 }
-.nav--signature{
-  width: 15%;
-}
-.nav--signature img{
-height: 100%;
-width: 100%;
-object-fit: contain;
+
+.nav--signature {
+  display: flex;
+  align-items: center;
 }
 
 .navbar--items > ul {
@@ -213,7 +220,6 @@ object-fit: contain;
   color: var(--primary);
 }
 /* Navbar Styler Ends */
-
 /* Skills Section style Begins*/
 .skills--section{
   display: flex;
