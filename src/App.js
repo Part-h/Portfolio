@@ -7,6 +7,7 @@ import Navbar from './Views/Home/Navbar.jsx';
 import Home from "./Views/Home/HomeScreen/index.jsx";
 import './fonts/Kingsman.ttf';
 
+
 function App() {
   return (
     <div className="App">
