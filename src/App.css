@@ -1,4 +1,8 @@
 /* Global CSS */
+
+
+
+
 @font-face {
   font-family: "GoldmanBold";
   src: local("GoldmanBold"),
@@ -414,6 +418,7 @@ h2 {
   }
   .skills--section--container,
   .about--section,
+  .experience--section,
   .portfolio--section--container,
   .portfolio--container-box,
   .footer--link--container,

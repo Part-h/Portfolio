@@ -1,6 +1,8 @@
-import './App.css';
 import './Css/HeroSection.css';
 import './Css/MySkills.css';
+import './Css/MyExperience.css';
+import './App.css';
+
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import Navbar from './Views/Home/Navbar.jsx';

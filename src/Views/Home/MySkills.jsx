@@ -40,17 +40,7 @@ export default function MySkills() {
             <div className="content">
               <div className="backside">
               <FontAwesomeIcon className="myskills--react" icon={faReact} size="lg" style={{color:"#74C0FC",}}/>
-              <FontAwesomeIcon className="myskills--react" icon={faReact} size="lg" style={{color:"#74C0FC",}}/>
-              <FontAwesomeIcon className="myskills--react" icon={faReact} size="lg" style={{color:"#74C0FC",}}/>
-              <FontAwesomeIcon className="myskills--react" icon={faReact} size="lg" style={{color:"#74C0FC",}}/>
-              <FontAwesomeIcon className="myskills--react" icon={faReact} size="lg" style={{color:"#74C0FC",}}/>
-              <FontAwesomeIcon className="myskills--react" icon={faReact} size="lg" style={{color:"#74C0FC",}}/>
-              <FontAwesomeIcon className="myskills--react" icon={faReact} size="lg" style={{color:"#74C0FC",}}/>
-              <FontAwesomeIcon className="myskills--react" icon={faReact} size="lg" style={{color:"#74C0FC",}}/>
-              <FontAwesomeIcon className="myskills--react" icon={faReact} size="lg" style={{color:"#74C0FC",}}/>
-              <FontAwesomeIcon className="myskills--react" icon={faReact} size="lg" style={{color:"#74C0FC",}}/>
-              <FontAwesomeIcon className="myskills--react" icon={faReact} size="lg" style={{color:"#74C0FC",}}/>
-              
+
               </div>
             </div>
           </div>
