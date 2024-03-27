@@ -244,56 +244,100 @@ h2 {
 /* Footer Style Begins */
 .footer--container {
   display: flex;
-  padding: 106.667px 85.333px;
   flex-direction: column;
-  align-items: flex-start;
-  background: var(--bg-shade);
+  justify-content: center;
   align-items: center;
-  align-self: stretch;
+  padding: 106.667px 85.333px;
+  background: #161A30;
 }
+
 .footer--link--container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
+  margin-bottom: 20px; /* Definite space between content */
 }
-.footer--items > ul {
-  list-style: none;
-  display: flex;
-  align-items: flex-start;
-  gap: 42.667px;
-  text-decoration: none;
-}
-.footer--items ul > li > a {
-  text-decoration: none;
-}
+
 .footer--social--icon > ul {
+  padding-left: 0px;
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 16px;
-  flex-shrink: 0;
-  text-decoration: none;
+  gap: 22px;
 }
-.divider {
-  margin: 106px 0 42.67px;
-  height: 1.333px;
-  width: 100%;
-  background: rgba(40, 41, 56, 0.55);
-}
-.footer--content--container {
+
+.footer--social--icon > ul > li {
+  width: 65px; /* Set fixed width for each li */
+  height: 65px; /* Set fixed height for each li */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  align-self: stretch;
 }
+
+.footer--social--icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 65px;
+  font-size: 30px; /* Adjust font size */
+  color: #ffffff; /* Change icon color */
+  transition: 0.5s ease;
+  border-radius: 50%; /* Make each li circular */
+}
+
+.footer--social--icon a:hover {
+  font-size: 25px; /* Decrease font size on hover */
+  color: #01FFF4;
+  border-radius: 50%;
+  box-shadow: 0 0 40px #01FFF4;
+}
+
+.footer-rocket-image {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  display: flex; /* Use flexbox to center align content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.rocket-image {
+  height: 80px;
+  /* Remove height property to allow the image to maintain its aspect ratio */
+  object-fit: contain;
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+.rocket-image-description {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: var(--white);
+}
+
+.footer-rocket-image:hover .rocket-image-description {
+  opacity: 1;
+}
+
+.footer--content--container {
+  margin-top: 40px; /* Definite space between content */
+}
+
 .footer--content {
-  color: var(--black);
+  color: var(--white);
   font-size: 18.667px;
   font-weight: 400;
   line-height: 28px;
 }
+
 /* Footer Style Ends */
 
 /* Responsive Screens */
