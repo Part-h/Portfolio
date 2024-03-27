@@ -4,8 +4,8 @@
 }
 .experience--section {
     display: grid;
-    gap: 114.6px;
-    grid-template-columns: minmax(100px, 2fr) minmax(100px, 1fr);
+    gap: 90px;
+    grid-template-columns:minmax(100px, 2fr) minmax(100px, 1fr);
     position: relative;
   }
   .experience-heading{
@@ -22,10 +22,11 @@
       line-height: 1.7;
   }
   .technology-section h2{
-    margin-left: 15px;
+    text-align: center;
+    /* margin-left: 55px; */
   }
   .technology-images{
-    margin-top: 50px;
+    margin: 50px;
     display: grid;
     grid-template-columns: repeat(5, minmax(100px, 1fr)); /* Change 200px to whatever width you want */
     gap: 25px; /* Adjust as needed */

@@ -1,8 +1,4 @@
 /* Global CSS */
-
-
-
-
 @font-face {
   font-family: "GoldmanBold";
   src: local("GoldmanBold"),
@@ -244,75 +240,7 @@ h2 {
   background: var(--bg-shade); */
 }
 /* About Us Style Ends*/
-/* Portfolio Style Begins */
-.portfolio--section {
-  display: flex;
-  padding: 112px 85px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 80px;
-}
-.portfolio--container-box{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-}
-.portfolio--container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 21.3px;
-}
-.portfolio--section--container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 42.6px;
-  width: 100%;
-}
-.portfolio--section--img {
-  border-radius: 8px;
-  width: 100%;
-}
-.portfolio--section--img > img {
-  width: 100%;
-}
-.portfolio--section--card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  flex: 1 0 0;
-  background: #fff;
-  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-.portfolio--section--card--content {
-  display: flex;
-  padding: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  align-self: stretch;
-}
-.portfolio--section--title {
-  color: var(--heading-color);
-}
-.portfolio--link {
-  text-decoration: none;
-  display: flex;
-  gap: 16px;
-  border-bottom: 1.33px solid var(--primary);
-  padding-bottom: 10.6px;
-  font-weight: 600;
-}
-.portfolio--section--card:hover path {
-  stroke: #006b6a;
-}
-/* Portfolio Style Ends */
+
 /* Footer Style Begins */
 .footer--container {
   display: flex;
@@ -367,6 +295,7 @@ h2 {
   line-height: 28px;
 }
 /* Footer Style Ends */
+
 /* Responsive Screens */
 @media only screen and (max-width: 1800px) {
   .hero--section--title {

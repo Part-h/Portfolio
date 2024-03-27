@@ -1,0 +1,71 @@
+/* Portfolio Style Begins */
+.portfolio--section {
+    display: flex;
+    padding: 112px 85px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+  }
+  .portfolio--container-box{
+    width: 100%;
+    text-align: center;
+  }
+  
+  .portfolio--section--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42.6px;
+    width: 100%;
+  }
+  
+  .portfolio--section--img {
+    position: relative;
+    border-radius: 8px;
+    width: 100%;
+    transition: opacity 0.3s ease; /* Adding transition for smooth effect */
+  }
+  
+  .portfolio--section--img:hover {
+    opacity: 0.8; /* Reduce opacity of the image on hover */
+  }
+  
+  .portfolio--section--img > img {
+    width: 100%;
+  }
+  
+  .portfolio--section--card {
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    background: #fff;
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* Adding cubic-bezier for smooth effect */
+  }
+  
+  .portfolio--section--card:hover {
+    transform: translateY(-15px); /* Lift the card a little on hover */
+  }
+  
+  .portfolio--section--card--content {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+  }
+  
+  .portfolio--section--title {
+    color: var(--heading-color);
+  }
+  
+  /* Portfolio Style Ends */
+  
