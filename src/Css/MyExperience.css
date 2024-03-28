@@ -5,10 +5,10 @@
 .experience--section {
     display: grid;
     gap: 90px;
-    grid-template-columns:minmax(100px, 2fr) minmax(100px, 1fr);
+    grid-template-columns:minmax(100px, 1.8fr) minmax(100px, 1fr);
     position: relative;
   }
-  .experience-heading{
+.experience-heading{
     text-align: center;
     margin-bottom: 70px;
 }
@@ -26,7 +26,7 @@
     /* margin-left: 55px; */
   }
   .technology-images{
-    margin: 50px;
+    margin: 60px;
     display: grid;
     grid-template-columns: repeat(5, minmax(100px, 1fr)); /* Change 200px to whatever width you want */
     gap: 25px; /* Adjust as needed */
@@ -55,7 +55,7 @@
 }
 .education-image img{
 
-    margin-top: 40px;
+    margin-top: 50px;
     height: 100%;
     width: 100%;
     object-fit: fill;

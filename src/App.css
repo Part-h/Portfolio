@@ -90,6 +90,36 @@ p {
   color: var(--github);
   background-color: var(--white);
 }
+.banner-search-select button{
+  margin-top: 10px;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  height: 45px;
+  width: 150px;
+  border: none;
+  border-radius: 35px;
+  font-weight: 600;
+  background-color: var(--primary);
+}
+.banner-search-select button:after{
+  top: 0;
+  width: 0;
+  left: -40%;
+  content: "";
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  background-color: #0000fe;
+}
+.banner-search-select button:hover:after{
+  height: 100%;
+  width: 150%;
+}
 /* Global css ends */
 /* Main Headings */
 
@@ -223,14 +253,15 @@ h2 {
 
 /* About us */
 .about--section {
+  margin-left:auto ;
+  margin-right: auto;
   display: grid;
-  padding: 133.3px 85.3px;
+  padding: 133.3px 185.3px;
   align-items: center;
-  gap: 114.6px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns:minmax(100px, 1fr) minmax(100px, 1.5fr);
 }
 .about--section--img{
-  height:800px;
+  height:400px;
   margin: auto;
 }
 .about--section--img  img{
@@ -238,6 +269,18 @@ h2 {
   height: 100%;
   /* border-radius: 10.6px;
   background: var(--bg-shade); */
+}
+.hero--section--content--boxabout--section--box{
+  width: 700px;
+}
+.about--section--content{
+  display: grid;
+  gap: 20px;
+}
+.about--section--content h1{
+  color: var(--heading-color);
+  font-weight: 700;
+  line-height: 77px;
 }
 /* About Us Style Ends*/
 

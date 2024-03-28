@@ -3,16 +3,10 @@
   display: flex;
   padding: 149.33px 85.33px;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 106.667px;
+  align-items: center;
 }
 
-.skills--section--heading {
-  color: var(--heading-color);
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 77px;
-}
+
 .skills--section--container {
   display: grid;
   justify-content: center;

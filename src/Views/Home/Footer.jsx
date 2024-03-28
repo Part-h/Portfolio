@@ -4,6 +4,8 @@ import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faCodepen } from "@fortawesome/free-brands-svg-icons";
+
 
 class Footer extends React.Component {
   scrollToTop = () => {
@@ -57,6 +59,16 @@ class Footer extends React.Component {
                   rel="noreferrer"
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} size="xl" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  className="navbar--content"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon icon={faCodepen} size="xl" />
                 </a>
               </li>
             </ul>
