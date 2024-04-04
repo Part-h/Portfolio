@@ -5,7 +5,7 @@ import {faReact} from "@fortawesome/free-brands-svg-icons";
 export default function MySkills() {
   return (
     <section className="skills--section" id="mySkills">
-      <div className="experience-heading">
+      <div className="skills-heading">
             <h1> SKILLS</h1>
             <p> Elevating Experiences, Empowering Innovation: Bringing Skills to Life in Every Pixel.</p>
         </div>
