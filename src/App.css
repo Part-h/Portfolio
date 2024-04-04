@@ -91,7 +91,7 @@ p {
   background-color: var(--white);
 }
 .banner-search-select button{
-  margin-top: 10px;
+  margin-top: 40px;
   z-index: 1;
   overflow: hidden;
   position: relative;
@@ -125,7 +125,7 @@ p {
 
 /* Heading 1 */
 h1{
-  font-size: 56px;
+  font-size: 64px;
   font-weight: 700px;
   line-height: 67px;
 }
@@ -180,6 +180,7 @@ h2 {
 }
 /* Navbar style start */
 .navbar {
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -211,7 +212,7 @@ h2 {
   text-decoration: none;
   position: relative;
   color: var(--darkblue);
-  transition: color 0.3s ease; /* Add transition effect for color change */
+  transition: color 0.3s ease; 
 }
 
 .navbar--items ul > li > a:hover::after {
@@ -222,18 +223,18 @@ h2 {
   width: 100%;
   height: 2px;
   background-color: var(--primary);
-  transform: scaleX(0); /* Initial state for the animation */
+  transform: scaleX(0); 
   transform-origin: bottom right;
-  transition: transform 0.3s ease; /* Add transition effect for the animation */
+  transition: transform 0.3s ease; 
 }
 
 .navbar--items ul > li > a:hover {
-  color: var(--primary); /* Change text color on hover */
+  color: var(--primary); 
   font-weight: 500;
 }
 
 .navbar--items ul > li:hover {
-  cursor: pointer; /* Change cursor on hover */
+  cursor: pointer; 
 }
 
 /* Navbar Content */
@@ -383,18 +384,45 @@ h2 {
 
 /* Footer Style Ends */
 
+
+/* Hamburger menu  */
+
+.nav__hamburger {
+  display: none;
+  width: 1.875rem;
+  height: 1.313rem;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+.nav__hamburger__line {
+  display: block;
+  height: 0.188rem;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 0.625rem;
+  transition: all ease-in-out 0.2s;
+}
+
+/* Responsive Screens Ends*/
+
+/* Hero Section Style End */
+
+/* Add the following media queries at the end of your CSS */
+
 /* Responsive Screens */
 @media only screen and (max-width: 1800px) {
-  .hero--section--title {
-    font-size: 68px;
-  }
   .skills--section--title {
-    font-size: 28px;
+    font-size: 48px;
     line-height: 40px;
   }
 }
 
 @media only screen and (max-width: 1600px) {
+
   .skills--section--heading {
     font-size: 54px;
     line-height: 70px;
@@ -419,13 +447,57 @@ h2 {
 }
 
 @media only screen and (max-width: 1200px) {
+  .nav__hamburger {
+    display: flex;
+    z-index: 200;
+  }
+  .navbar--items {
+    display: flex;
+  }
+  .navbar--items {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255);
+    top: -20rem;
+    left: 0;
+    width: 100%;
+    transition: all ease-in-out 0.4s;
+  }
+  .navbar--items ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* padding: 3rem 0 0.6rem; */
+    padding: 0 0 0.6rem;
+    z-index: -100;
+  }
+  .navbar--items ul li {
+    text-align: center;
+  }
+  .navbar--items ul li a {
+    padding: 0.5rem;
+  }
+  .navbar--items {
+    z-index: -1000;
+  }
+  .navbar--items.active {
+    top: 30px;
+  }
+  .nav__hamburger.active :nth-child(1) {
+    transform: rotate(45deg) translate(0.45rem, 0.1875rem);
+  }
+
+  .nav__hamburger.active :nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav__hamburger.active :nth-child(3) {
+    transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+  }
   .btn-outline-primary {
     display: none;
-  }
-  .hero--section {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 70px;
   }
   .hero--section--title,
   .hero--section-description,
@@ -468,11 +540,12 @@ h2 {
   .testimonial--section--card {
     padding: 25px;
   }
-  .hero--section--title,
+  .hero--section--content,
   .skills--section--heading,
   .sections--heading {
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 48px;
+    line-height: 60px;
+     width: 460px;
   }
   .hero--section--content--box {
     gap: 10px;
@@ -494,200 +567,16 @@ h2 {
     margin: 20px;
   }
 }
-
-/* Hamburger menu  */
-
-.nav__hamburger {
-  display: none;
-  width: 1.875rem;
-  height: 1.313rem;
-  flex-direction: column;
-  justify-content: space-around;
-  position: absolute;
-  top: 25px;
-  right: 25px;
-}
-
-.nav__hamburger__line {
-  display: block;
-  height: 0.188rem;
-  width: 100%;
-  background-color: #000000;
-  border-radius: 0.625rem;
-  transition: all ease-in-out 0.2s;
-}
-
-@media screen and (max-width: 1200px) {
-  .nav__hamburger {
-    display: flex;
-    z-index: 200;
+@media only screen and (max-width: 500px){
+  .navbar{
+    padding:7px;
   }
-  .navbar--items {
-    display: flex;
+  .hero--section{
+    height:700px;
   }
-  .navbar--items {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255);
-    top: -20rem;
-    left: 0;
-    width: 100%;
-    transition: all ease-in-out 0.4s;
-  }
-  .navbar--items ul {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 3rem 0 0.6rem;
-    z-index: -100;
-  }
-  .navbar--items ul li {
-    text-align: center;
-  }
-  .navbar--items ul li a {
-    padding: 0.5rem;
-  }
-  .navbar--items {
-    z-index: -1000;
-  }
-  .navbar--items.active {
-    top: 30px;
-  }
-  .nav__hamburger.active :nth-child(1) {
-    transform: rotate(45deg) translate(0.45rem, 0.1875rem);
-  }
-
-  .nav__hamburger.active :nth-child(2) {
-    opacity: 0;
-  }
-
-  .nav__hamburger.active :nth-child(3) {
-    transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+  .hero--section--content{
+    width:360px ;
+    font-size: 32px;
+    line-height: 50px;
   }
 }
-
-/* Responsive Screens Ends*/
-/* Hero Section Style End */
-
-/* Add the following media queries at the end of your CSS */
-
-/* Responsive Screens */
-@media only screen and (max-width: 1800px) {
-  .hero--section--title {
-    font-size: 68px;
-  }
-  /* Add more responsive adjustments as needed */
-}
-
-@media only screen and (max-width: 1600px) {
-  .skills--section--heading {
-    font-size: 54px;
-    line-height: 70px;
-  }
-  /* Add more responsive adjustments as needed */
-}
-
-@media only screen and (max-width: 1200px) {
-  .btn-outline-primary {
-    display: none;
-  }
-  .hero--section {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 70px;
-  }
-  .hero--section--title,
-  .hero--section-description,
-  .footer--content {
-    text-align: center;
-  }
-  .skills--section--container,
-  .about--section,
-  .portfolio--section--container,
-  .portfolio--container-box,
-  .footer--link--container,
-  .footer--items > ul,
-  .footer--content--container {
-    display: flex;
-    flex-direction: column;
-  }
-  .skills--section,
-  .portfolio--container,
-  .hero--section--content,
-  .hero--section--content--box {
-    align-items: center;
-  }
-
-  /* Mobile menu styles */
-  .navbar--items {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255);
-    top: -20rem;
-    left: 0;
-    width: 100%;
-    transition: all ease-in-out 0.4s;
-    z-index: 1000;
-  }
-  .navbar--items ul {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 3rem 0 0.6rem;
-  }
-  .navbar--items ul li {
-    text-align: center;
-  }
-  .navbar--items ul li a {
-    padding: 0.5rem;
-  }
-  .navbar--items.active {
-    top: 30px;
-  }
-  .nav__hamburger.active :nth-child(1) {
-    transform: rotate(45deg) translate(0.45rem, 0.1875rem);
-  }
-  .nav__hamburger.active :nth-child(2) {
-    opacity: 0;
-  }
-  .nav__hamburger.active :nth-child(3) {
-    transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
-  }
-  /* End of mobile menu styles */
-
-  /* Add more responsive adjustments as needed */
-}
-
-/* Hamburger menu */
-.nav__hamburger {
-  display: none;
-  width: 1.875rem;
-  height: 1.313rem;
-  flex-direction: column;
-  justify-content: space-around;
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-}
-
-.nav__hamburger__line {
-  display: block;
-  height: 0.188rem;
-  width: 100%;
-  background-color: #000000;
-  border-radius: 0.625rem;
-  transition: all ease-in-out 0.2s;
-}
-
-@media screen and (max-width: 1200px) {
-  .nav__hamburger {
-    display: flex;
-    z-index: 200;
-  }
-}
-/* Responsive Screens Ends */

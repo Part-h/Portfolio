@@ -90,6 +90,7 @@ function Navbar() {
               Passion
             </Link>
           </li>
+          
           <li>
             <Link
               onClick={closeMenu}
@@ -104,7 +105,6 @@ function Navbar() {
               Experience
             </Link>
           </li>
-        
           <li>
             <Link
               onClick={closeMenu}
@@ -113,14 +113,15 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="MyPortfolio"
+              to="testimonial"
               className="navbar--content"
             >
-              Portfolio
+              Testimonials
             </Link>
           </li>
         </ul>
       </div>
+
       <Link
         onClick={closeMenu}
         activeClass="navbar--active-content"

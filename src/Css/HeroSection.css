@@ -1,33 +1,35 @@
 /* Hero Section Style */
-.hero--section{
-    padding-top: 20%;
-    padding-bottom:12%;
-    background-color: var(--bg-shade);
-  }
+.hero--section {
+  position: relative;
+  width: auto;
+  height:900px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../../public/img/herosectionWallpaper.jpg');
+  background-size: cover; /* Ensure the background image covers the entire background area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
   .hero--section--content--box{
-    margin: auto;
-    width: max-content;
+    position: absolute;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50% , -50% );
     text-align: center;
   }
-  .hero--section--content{
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start; */
-    /* gap:21.333px; */
+  .hero--section--content {
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 80px;
   }
+  
   .hero--section--name{
     color: var(--primary);
   }
   .hero--section--content--box > button {
     margin-top: 21.333px;
   }
-  .hero--section--title{
-    color: var(--heading-color);
-    font-size: 2.25rem;
-    font-weight: 500;
-    line-height: 70px;
-  }
-  
+
   /* Animation effect for auto-writing and erasing */
   @keyframes autoWriteErase {
     0% {
@@ -81,13 +83,35 @@
     margin-left: 4px; /* Adjust the spacing between text and cursor */
     animation: cursorBlink 1s infinite; /* Adjust the duration as needed */
   }
-  
-  /* .hero--section--title--color{
-    color:var(--primary);
-  } */
-  /* .hero--section-description {
-    color: var(--darkblue);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-  } */
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(16deg);
+  }
+  20% {
+    transform: rotate(-6deg);
+  }
+  30% {
+    transform: rotate(16deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(16deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.waving-hand {
+  animation: wave 2.5s 50s infinite;
+  transform-origin: 75% 75%;
+  display: inline-block;
+}
