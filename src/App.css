@@ -25,6 +25,7 @@ h5,
 h6,
 p {
   margin: 0;
+  font-size: 18px;
 }
 :root {
   --primary: #5e3bee;
@@ -91,15 +92,16 @@ p {
   background-color: var(--white);
 }
 .banner-search-select button{
+  font-size: 16px;
   margin-top: 40px;
   z-index: 1;
   overflow: hidden;
   position: relative;
   color: #fff;
-  height: 45px;
-  width: 150px;
+  height: 60px;
+  width: 180px;
   border: none;
-  border-radius: 35px;
+  border-radius: 5px;
   font-weight: 600;
   background-color: var(--primary);
 }
@@ -257,12 +259,12 @@ h2 {
   margin-left:auto ;
   margin-right: auto;
   display: grid;
-  padding: 133.3px 185.3px;
+  padding: 112px 85px;
   align-items: center;
   grid-template-columns:minmax(100px, 1fr) minmax(100px, 1.5fr);
 }
 .about--section--img{
-  height:400px;
+  height:500px;
   margin: auto;
 }
 .about--section--img  img{
@@ -271,17 +273,15 @@ h2 {
   /* border-radius: 10.6px;
   background: var(--bg-shade); */
 }
-.hero--section--content--boxabout--section--box{
-  width: 700px;
-}
 .about--section--content{
   display: grid;
   gap: 20px;
 }
-.about--section--content h1{
+.about--section--content {
   color: var(--heading-color);
-  font-weight: 700;
-  line-height: 77px;
+}
+.hero--section--content--boxabout--section--box{
+  width: 800px;
 }
 /* About Us Style Ends*/
 
@@ -419,10 +419,13 @@ h2 {
     font-size: 48px;
     line-height: 40px;
   }
+  .hero--section--content--boxabout--section--box{
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 1600px) {
-
+  
   .skills--section--heading {
     font-size: 54px;
     line-height: 70px;
@@ -447,6 +450,9 @@ h2 {
 }
 
 @media only screen and (max-width: 1200px) {
+  h1{
+    font-size: 48px;
+  }
   .nav__hamburger {
     display: flex;
     z-index: 200;
@@ -505,7 +511,6 @@ h2 {
     text-align: center;
   }
   .skills--section--container,
-  .about--section,
   .experience--section,
   .portfolio--section--container,
   .portfolio--container-box,
@@ -533,9 +538,15 @@ h2 {
     padding-bottom: 70px;
   }
   .about--section {
+    padding: 80px 32px;
     gap: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
+  }
+  .about--section--img{
+    height:400px;
+    margin: auto;
+  }
+  .hero--section-description{
+    text-align: left;
   }
   .testimonial--section--card {
     padding: 25px;
@@ -579,4 +590,10 @@ h2 {
     font-size: 32px;
     line-height: 50px;
   }
+  .about--section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
 }

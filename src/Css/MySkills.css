@@ -1,7 +1,7 @@
 /* Skills Section Style */
 .skills--section {
   display: flex;
-  padding: 149.33px 85.33px;
+  padding: 112px 85px;
   flex-direction: column;
   align-items: center;
 }

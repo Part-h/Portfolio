@@ -11,12 +11,10 @@ export default function HeroSection(){
         <section id="herosection" className="hero--section">
             <div className="hero--section--content--box">
                 <div className="hero--section--content">
-                    Hey <span class="waving-hand">👋</span>
-                    <p className="hero--section--title"> I'm <span className="hero--section--name">Parth Patel</span>.</p>
-                    {/* <h1 className="hero--section--title"> */}
-                        {/* <span className="hero--section--title--color">Full Stack</span>{" "} */}
-                    {/* </h1> */}
-                    <span className="hero--section--title"> Full Stack Developer.</span>
+                    Hey<span class="waving-hand">👋</span><br/>
+                    <span className="hero--section--title"> I'm <span className="hero--section--name">Parth Patel</span>.</span>
+                    <br></br>Full Stack Developer
+                    
                 </div>
                 {/* <button className="btn btn-outline-primary" onClick={() => scrollToSection('mySkills')}>View My Work</button> */}
 
