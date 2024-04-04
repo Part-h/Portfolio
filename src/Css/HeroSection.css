@@ -20,7 +20,7 @@
     color: #ffffff;
     font-size: 64px;
     font-weight: 500;
-    line-height: 80px;
+    line-height: 90px;
   }
   
   .hero--section--name{
@@ -111,7 +111,7 @@
   }
 }
 .waving-hand {
-  animation: wave 2.5s 50s infinite;
+  animation: wave 3.5s 1s infinite;
   transform-origin: 75% 75%;
   display: inline-block;
 }

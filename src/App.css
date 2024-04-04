@@ -256,6 +256,7 @@ h2 {
 
 /* About us */
 .about--section {
+  background:aliceblue;
   margin-left:auto ;
   margin-right: auto;
   display: grid;
@@ -415,13 +416,10 @@ h2 {
 
 /* Responsive Screens */
 @media only screen and (max-width: 1800px) {
-  .skills--section--title {
-    font-size: 48px;
-    line-height: 40px;
-  }
   .hero--section--content--boxabout--section--box{
     width: auto;
   }
+
 }
 
 @media only screen and (max-width: 1600px) {
@@ -444,7 +442,7 @@ h2 {
     line-height: 30px;
   }
   .skills--section--description {
-    font-size: 17.333px;
+    font-size: 18px;
     line-height: 27px;
   }
 }
@@ -526,10 +524,14 @@ h2 {
   .hero--section--content--box {
     align-items: center;
   }
+  .skills--section{
+    padding:80px 48px;
+    gap:40px;
+  }
   .portfolio--container-box {
     gap: 30px;
   }
-  .skills--section,
+
   .testimonial--section,
   .contact--section,
   .footer--container {
@@ -538,7 +540,7 @@ h2 {
     padding-bottom: 70px;
   }
   .about--section {
-    padding: 80px 32px;
+    padding: 80px 48px;
     gap: 20px;
   }
   .about--section--img{
@@ -578,7 +580,29 @@ h2 {
     margin: 20px;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .skills--section--layer2 {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between;
+    gap: 50px;
+  }
+  
+  .skills--section--card {
+    width: calc(50% - 25px); /* Set width to 50% of container width minus gap */
+  }
+  
+    
+}
 @media only screen and (max-width: 500px){
+  .skills--section--layer2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .skills--section--card {
+    width: auto; /* Set width to 50% of container width minus gap */
+  }
   .navbar{
     padding:7px;
   }
