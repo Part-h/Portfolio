@@ -17,7 +17,7 @@ export default function MyPortfolio(){
             </div>
             <div className="portfolio--section--card--content">
               <div>
-                <h3 className="portfolio--section--title">{item.title}</h3>
+                <h2 className="portfolio--section--title">{item.title}</h2>
                 <p className="text-md">{item.description}</p>
               </div>
             </div>

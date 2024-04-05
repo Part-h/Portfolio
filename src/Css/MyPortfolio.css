@@ -7,8 +7,11 @@
     gap: 80px;
   }
   .portfolio--container-box{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     text-align: center;
+    gap:20px;
   }
   
   .portfolio--section--container {
@@ -56,7 +59,7 @@
   
   .portfolio--section--card--content {
     display: flex;
-    padding: 32px;
+    padding: 32px 5px;
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
