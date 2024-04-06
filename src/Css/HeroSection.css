@@ -2,7 +2,7 @@
 .hero--section {
   position: relative;
   width: auto;
-  height:900px;
+  height:1000px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../../public/img/herosectionWallpaper.jpg');
   background-size: cover; /* Ensure the background image covers the entire background area */
   background-position: center; /* Center the background image */
@@ -18,7 +18,7 @@
   }
   .hero--section--content {
     color: #ffffff;
-    font-size: 64px;
+    font-size: var(--60);
     font-weight: 500;
     line-height: 90px;
   }

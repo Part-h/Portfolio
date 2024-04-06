@@ -1,4 +1,7 @@
 /* Global CSS */
+/* @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @font-face {
   font-family: "GoldmanBold";
   src: local("GoldmanBold"),
@@ -6,16 +9,29 @@
  }
  .font-face{
   font-family: "GoldmanBold";
-  font-size: 60px;
+  font-size: 48px;
   padding-top: 5px;
   color: var(--heading-color);
  }
+ :root {
+  --primary: #5e3bee;
+  --heading-color: #282938;
+  --bg-shade: #f5fcff;
+  --github: #e62872;
+  --darkblue: #1c1e53;
+  --black: #000000;
+  --white: #ffffff;
+  --48:48px;
+  --16:16px;
+  --60:60px;
+}
 body{
   margin:0;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: "Roboto", sans-serif;
-  -moz-osx-font-smoothing: "Roboto", sans-serif;
+  /* font-family: "Exo 2", sans-serif; */
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
+  font-weight:300;
 }
 h1,
 h2,
@@ -25,25 +41,17 @@ h5,
 h6,
 p {
   margin: 0;
-  font-size: 18px;
+  font-size: var(--16);
+  /* text-align: justify; */
 }
-:root {
-  --primary: #5e3bee;
-  --heading-color: #282938;
-  --bg-shade: #f5fcff;
-  --github: #e62872;
-  --darkblue: #1c1e53;
-  --black: #000000;
-  --white: #ffffff;
-}
+
 .btn{
   font-family: "Roboto";
   display: inline-block;
-  padding: 14px 32px;
-  font-size: 16px;
+  padding: 12px 26px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -127,7 +135,7 @@ p {
 
 /* Heading 1 */
 h1{
-  font-size: 64px;
+  font-size: var(--60);
   font-weight: 700px;
   line-height: 67px;
 }
@@ -157,7 +165,6 @@ h2 {
   color: var(--darkblue);
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
   line-height: 24px;
 }
 /* Body 3 */
@@ -186,7 +193,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 85.333px;
+  padding: 0px 85.333px;
   background: var(--white);
   box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -242,7 +249,7 @@ h2 {
 /* Navbar Content */
 .navbar--content {
   color: var(--darkblue);
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -279,6 +286,7 @@ h2 {
   gap: 20px;
 }
 .about--section--content {
+  text-align: justify;
   color: var(--heading-color);
 }
 .hero--section--content--boxabout--section--box{

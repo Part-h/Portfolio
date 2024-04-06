@@ -12,7 +12,7 @@ export default function HeroSection(){
             <div className="hero--section--content--box">
                 <div className="hero--section--content">
                     Hey<span class="waving-hand">👋</span><br/>
-                    <span className="hero--section--title"> I'm <span className="hero--section--name">Parth Patel</span>.</span>
+                    <span className="hero--section--title"> I'm <span className="hero--section--name">Parth Patel</span></span>
                     <br></br>Full Stack Developer
                     
                 </div>
