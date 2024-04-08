@@ -23,13 +23,7 @@ export default function MySkills() {
                   {item.description}
                 </p>
               </div>
-            </div>
-
-            <div className="content">
-              <div className="backside">
-              <FontAwesomeIcon className="myskills--react" icon={faReact} size="lg" style={{color:"#74C0FC",}}/>
-              </div>
-            </div>
+            </div> 
           </div>
           
         ))}

@@ -193,7 +193,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 85.333px;
+  padding: 5px 85.333px;
   background: var(--white);
   box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -275,11 +275,16 @@ h2 {
   height:500px;
   margin: auto;
 }
-.about--section--img  img{
+.about--section--img img {
   max-width: 100%;
   height: 100%;
-  /* border-radius: 10.6px;
-  background: var(--bg-shade); */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.about--section--img:hover img {
+  transform: rotateY(15deg) rotateX(-15deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 .about--section--content{
   display: grid;
@@ -300,7 +305,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 75px 85.333px;
+  padding: 60px 85.333px;
   background: #161A30;
 }
 
@@ -403,7 +408,7 @@ h2 {
   flex-direction: column;
   justify-content: space-around;
   position: absolute;
-  top: 25px;
+  top: 20px;
   right: 30px;
 }
 
@@ -431,7 +436,10 @@ h2 {
 }
 
 @media only screen and (max-width: 1600px) {
-  
+  .hero--section--content{
+    font-size: var(--48);
+    line-height: 70px;
+  }
   .skills--section--heading {
     font-size: 54px;
     line-height: 70px;
@@ -458,6 +466,9 @@ h2 {
 @media only screen and (max-width: 1200px) {
   h1{
     font-size: 48px;
+  }
+  .navbar{
+    padding:5px 20px;
   }
   .nav__hamburger {
     display: flex;
@@ -561,7 +572,7 @@ h2 {
   .sections--heading {
     font-size: 48px;
     line-height: 60px;
-     width: 460px;
+     width: 465px;
   }
   .skills--section--layer2 {
     display: flex;
@@ -608,7 +619,7 @@ h2 {
     width: auto; /* Set width to 50% of container width minus gap */
   }
   .navbar{
-    padding:7px;
+    padding:7px 12px;
   }
   .hero--section{
     height:700px;
@@ -618,12 +629,24 @@ h2 {
     font-size: 32px;
     line-height: 50px;
   }
+
   .about--section{
     display: flex;
     flex-direction: column;
+  }
+  .about--section--content{
     text-align: center;
   }
   .experience--container{
-    padding: 80px 5px;
+    padding: 80px 40px;
+  }
+  .technology-images{
+    gap:16px;
+  }
+  .experience--individual--image{
+    height: 68px;
+  }
+  .experience--individual--image img {
+    width: 90%;
   }
 }

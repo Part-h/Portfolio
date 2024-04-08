@@ -1,6 +1,6 @@
 /* Skills Section Style */
 .skills--section {
-  background: #E8C872;
+  /* background: #E8C872; */
   display: flex;
   padding: 112px 85px;
   flex-direction: column;
@@ -8,62 +8,12 @@
   gap: 70px;
 }
 
-
 .skills--section--container {
   display: grid;
   justify-content: center;
-  align-items: flex-start;
   gap: 42.6px;
   grid-template-columns: repeat(4, 1fr);
 }
-/* .skills--section--card {
-    display: flex;
-    padding: 32px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-    flex: 1 0 0;
-    border-radius: 10.6px;
-    background: var(--bg-shade);
-    min-height: 250px;
-  }
-  .skills--section--card:hover {
-    border-bottom: 4px solid var(--primary);
-  }
-  .skills--section--card:hover .skills--section--description {
-    color: var(--darkblue);
-  }
-  .skills--section--img {
-    display: flex;
-    padding: 13.3px;
-    justify-content: center;
-    align-items: center;
-    gap: 13.3px;
-    border-radius: 10.6px;
-    background: #fff;
-    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
-  }
-  .skills--section--card--content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-    align-self: stretch;
-  }
-  .skills--section--title {
-    color: var(--heading-color);
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 45px;
-  }
-  .skills--section--description {
-    color: var(--black);
-    font-size: 21.3px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-  } */
-/* Skills Style Ends */
 .skills--section--layer2 {
   display: flex;
   flex-direction: row;
@@ -83,16 +33,14 @@
   flex-direction: column;
   border-radius: 10.6px;
   /* background: var(--bg-shade); */
-  background: #FFF3CF;
+  background: #fff;
   /* position: relative; */
+  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
   width: 100%;
   transform: perspective(1000px) rotateY(0deg);
   transition: 0.9s;
   backface-visibility: hidden;
   padding: 20px;
-}
-.skills--section--card:hover .frontside {
-  transform: perspective(1000px) rotateY(-180deg);
 }
 .skills--section--card--content {
   display: flex;
@@ -113,27 +61,4 @@
   font-style: normal;
   line-height: 32px;
 }
-.skills--section--card .content {
-  position: absolute;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-  border-radius: 10.6px;
-  background: #F5F5F5;
-  transform: perspective(1000px) rotateY(180deg);
-  transition: 0.9s;
-  backface-visibility: hidden;
-}
-.skills--section--card:hover .content {
-  transform: perspective(1000px) rotateY(0deg);
-}
-.skills--section--card .content  .backside{
- height: 100%;
- width:100%;
-}
 
-
-.skills--section--card .content  .backside .myskills--react{
-  padding: 10px;
-  height: 60px;
-}

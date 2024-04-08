@@ -17,11 +17,11 @@ export default function MyExperience(){
         <div className="experience--individual--image"><img src="./icons/python.png"></img></div>
         <div className="experience--individual--image"><img src="./icons/bootstrap.png"></img></div>
         <div className="experience--individual--image"><img src="./icons/java.png"></img></div>
-        <div className="experience--individual--image"><img src="./icons/github.png"></img></div>
+        <div className="experience--individual--image"><img src="./icons/docker.png"></img></div>
         <div className="experience--individual--image"><img src="./icons/jquery.png"></img></div>
         <div className="experience--individual--image"><img src="./icons/firebase.png"></img></div>
         <div className="experience--individual--image"><img src="./icons/mysql.png"></img></div>
-        <div className="experience--individual--image"><img src="./icons/docker.png"></img></div>
+        <div className="experience--individual--image"><img src="./icons/github.png"></img></div>
         <div className="experience--individual--image"><img src="./icons/react.png"></img></div>
         <div className="experience--individual--image"><img src="./icons/php.png"></img></div>
 
