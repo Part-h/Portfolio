@@ -30,7 +30,10 @@ function Navbar() {
       closeMenu;
     }
   }, []);
-
+  const openMailTo = (e) => {
+    e.preventDefault();
+    window.location.href = "mailto:patelparth2018@gmail.com";
+  }
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div className="nav--signature">
@@ -113,7 +116,7 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="MyPortfolio"
+              to="MyExperience"
               className="navbar--content"
             >
               Projects
@@ -123,7 +126,10 @@ function Navbar() {
       </div>
 
       <Link
-        onClick={closeMenu}
+        onClick={(e) => {
+          openMailTo(e);
+          closeMenu(); // Close the menu after clicking the link
+        }}
         activeClass="navbar--active-content"
         spy={true}
         smooth={true}

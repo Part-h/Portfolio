@@ -35,6 +35,8 @@ export default function MyExperience(){
         <h2> WHERE I'VE STUDIED:</h2>
         <div className="education-image">
         <img src="./img/uog2.png"></img>
+        {/* <img className="education-image-gtu" src="./img/gtu.png"></img> */}
+
         </div>
       </div>
     </div>

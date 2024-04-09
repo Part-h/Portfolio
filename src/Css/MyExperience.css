@@ -57,6 +57,7 @@
     margin:0px auto;
     width: 260px;
 }
+
 .education-image img{
     margin-left: 12px;
     margin-top: 50px;
@@ -64,5 +65,6 @@
     width: 100%;
     object-fit: fill;
 }
+
   /* About Us Style Ends*/
   /* Define animations */

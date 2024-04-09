@@ -10,19 +10,19 @@
         "id": "2",
         "src": "./img/tag-1.png",
         "title": "Back-End",
-        "description": ""
+        "description": "I specialize in backend wizardry, crafting efficient solutions that power applications and drive innovation forward with precision and reliability."
       },
       {
         "id": "3",
         "src": "./img/feather-pen-2.png",
         "title": "UI & UX Design",
-        "description": ""
+        "description": "Designing captivating user interfaces and intuitive experiences, I blend creativity with functionality to elevate user engagement and satisfaction."
       },
       {
         "id": "4",
         "src": "./img/feather-pen-1.png",
         "title": "Webflow Development",
-        "description": ""
+        "description": "With expertise in Webflow's intuitive platform, I craft dynamic websites that not only meet but exceed client expectations, pushing the boundaries of what's possible in web development."
       }
     ],
     "portfolio": [
