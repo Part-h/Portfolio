@@ -193,9 +193,12 @@ h2 {
 
 }
 
-.nav--signature {
+.nav--signaturevisible {
   display: flex;
   align-items: center;
+}
+.nav--signaturehidden{
+  display: none;
 }
 
 .navbar--items > ul {
@@ -503,7 +506,7 @@ h2 {
     z-index: -1000;
   }
   .navbar--items.active {
-    top: 30px;
+    top: 8px;
   }
   .nav__hamburger.active :nth-child(1) {
     transform: rotate(45deg) translate(0.45rem, 0.1875rem);
@@ -646,9 +649,9 @@ h2 {
     gap:15px;
   }
   .experience--individual--image{
-    height: 72px;
+    height: 74px;
   }
   .experience--individual--image img {
-    width: 80%;
+    width: 75%;
   }
 }

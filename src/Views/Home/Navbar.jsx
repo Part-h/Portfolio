@@ -3,19 +3,22 @@ import { Link } from "react-scroll";
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
+  const [signatureVisible, setSignatureVisible] = useState(true);
 
   const toggleNav = () => {
     setNavActive(!navActive);
+    setSignatureVisible(navActive); // Toggle the visibility of signature content
   };
 
   const closeMenu = () => {
     setNavActive(false);
+    setSignatureVisible(true); // Ensure signature content is visible when menu is closed
   };
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 500) {
-        closeMenu;
+        closeMenu();
       }
     };
     window.addEventListener("resize", handleResize);
@@ -27,16 +30,18 @@ function Navbar() {
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
-      closeMenu;
+      closeMenu();
     }
   }, []);
+
   const openMailTo = (e) => {
     e.preventDefault();
     window.location.href = "mailto:patelparth2018@gmail.com";
-  }
+  };
+
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div className="nav--signature">
+      <div className={`nav--signature${signatureVisible ? "visible" : "hidden"}`}>
         <span className="font-face">Parth Patel</span>
       </div>
       <a
@@ -48,7 +53,7 @@ function Navbar() {
         <span className="nav__hamburger__line"></span>
       </a>
       <div className={`navbar--items ${navActive ? "active" : ""}`}>
-        <ul>
+      <ul>
           <li>
             <Link
               onClick={closeMenu}
@@ -145,3 +150,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
