@@ -643,12 +643,12 @@ h2 {
     padding: 80px 40px;
   }
   .technology-images{
-    gap:16px;
+    gap:15px;
   }
   .experience--individual--image{
-    height: 75px;
+    height: 72px;
   }
   .experience--individual--image img {
-    width: 100%;
+    width: 80%;
   }
 }
