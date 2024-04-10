@@ -34,7 +34,7 @@ class AboutMe extends React.Component {
     return (
       <section id="AboutMe" className="about--section">
         <div className="about--section--img">
-        <img src="./img/about-me.jpg" alt="About me" className="img-hover-effect" />
+        <img src="./img/aboutme.jpg" alt="About me" className="img-hover-effect" />
         </div>
         <div className="hero--section--content--boxabout--section--box">
           <div className="about--section--content">

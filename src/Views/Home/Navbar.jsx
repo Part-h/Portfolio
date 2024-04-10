@@ -116,7 +116,7 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="MyExperience"
+              to="MyPortfolio"
               className="navbar--content"
             >
               Projects
