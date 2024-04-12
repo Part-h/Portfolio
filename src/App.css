@@ -415,11 +415,8 @@ h2 {
   transition: all ease-in-out 0.2s;
 }
 
-/* Responsive Screens Ends*/
-
 /* Hero Section Style End */
 
-/* Add the following media queries at the end of your CSS */
 
 /* Responsive Screens */
 @media only screen and (max-width: 1800px) {
@@ -430,6 +427,9 @@ h2 {
 }
 
 @media only screen and (max-width: 1600px) {
+  .hero--section{
+    height:700px;
+  }
   .hero--section--content{
     font-size: var(--48);
     line-height: 70px;
@@ -649,9 +649,12 @@ h2 {
     gap:15px;
   }
   .experience--individual--image{
-    height: 74px;
+    height: 72px;
   }
   .experience--individual--image img {
     width: 70%;
+  }
+  .footer--container{
+    padding: 30px ;
   }
 }

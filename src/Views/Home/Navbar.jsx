@@ -2,31 +2,18 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 function Navbar() {
-  const [navActive, setNavActive] = useState(false);
+  const [navActive, setNavActive] = useState(false);    //setNavActive is a function to update the state value
   const [signatureVisible, setSignatureVisible] = useState(true);
 
-  const toggleNav = () => {
+  const toggleNav = () => {                 // Call on hamburger clicked
     setNavActive(!navActive);
-    setSignatureVisible(navActive); // Toggle the visibility of signature content
+    setSignatureVisible(!signatureVisible); // Toggle the visibility of signature content
   };
 
   const closeMenu = () => {
     setNavActive(false);
     setSignatureVisible(true); // Ensure signature content is visible when menu is closed
   };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 500) {
-        closeMenu();
-      }
-    };
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
@@ -40,7 +27,8 @@ function Navbar() {
   };
 
   return (
-    <nav className={`navbar ${navActive ? "active" : ""}`}>
+    //this conditional expression checks the navActive value, incase true throws visible to classname attribute or viceversa 
+    <nav className={`navbar ${navActive ? "active" : ""}`}>   
       <div className={`nav--signature${signatureVisible ? "visible" : "hidden"}`}>
         <span className="font-face">Parth Patel</span>
       </div>
