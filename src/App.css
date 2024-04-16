@@ -88,17 +88,17 @@ p {
   background-color: var(--white);
 }
 .banner-search-select button{
-  font-size: 18px;
+  font-size: var(--16);
   margin-top: 40px;
   z-index: 1;
   overflow: hidden;
   position: relative;
   color: var(--white);
-  height: 65px;
+  height: 60px;
   width: 190px;
   border: none;
   border-radius: 5px;
-  font-weight: 600;
+  font-weight: 500;
   background-color: var(--primary);
   box-shadow: 0  17px 10px -10px rgba(0, 0, 0, 0.4);
   cursor:pointer;
@@ -348,6 +348,7 @@ h2 {
   display: flex; /* Use flexbox to center align content */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+
 }
 
 .rocket-image {
@@ -356,6 +357,7 @@ h2 {
   object-fit: contain;
   cursor: pointer;
   animation: float 3s ease-in-out infinite alternate;
+
 }
 
 @keyframes float {
@@ -414,9 +416,64 @@ h2 {
   border-radius: 0.625rem;
   transition: all ease-in-out 0.2s;
 }
-
 /* Hero Section Style End */
 
+
+/* MyResume Section */
+.ResumeSection{
+max-height: 700px;
+/* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../public/img/herosectionWallpaper.jpg'); */
+/* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+  background-attachment: fixed; */
+background: url('../public/img/Resumebackground.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+/* background-color: #000; */
+}
+.ResumeSectionContent{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+  padding: 102px 85px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+
+}
+.ResumeSectionContent span{
+  color: var(--white);
+  font-size: var(--48);
+}
+a.resume-btn{
+  width: 105px;
+  background: none;
+  display: inline-block;
+  padding: 12px 20px;
+  color: #ddd;
+  border: 3px solid #ccc;
+  font-size: var(--16);
+  font-weight: 300;
+  text-decoration: none;
+  letter-spacing: 1px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+a.resume-btn:hover,
+a.resume-btn:active {
+    /*background-position: -100% 100%;*/
+    color: #fff;
+    /*font-weight: 400;*/
+    border: 3px solid #ccc;
+    background-color: rgba(254, 254, 254, 0.2);
+    padding: 12px 35px;
+    cursor: pointer;
+}
+
+/* MyResume Section Ends */
 
 /* Responsive Screens */
 @media only screen and (max-width: 1800px) {
@@ -583,6 +640,7 @@ h2 {
   
   .skills--section--card {
     width: calc(50% - 25px); /* Set width to 50% of container width minus gap */
+    min-height: 350px;
   }
   .container {
     display: flex;
@@ -617,6 +675,7 @@ h2 {
   }
   .skills--section--card {
     width: auto; /* Set width to 50% of container width minus gap */
+    min-height: auto;
   }
   .navbar{
     padding:7px 12px;

@@ -3,8 +3,10 @@ import MySkills from "../MySkills";
 import AboutMe from "../AboutMe";
 import MyPortfolio from "../MyPortfolio";
 import MyExperience from "../Experience";
+import MyResume from "../MyResume";
 import Footer from "../Footer";
 import { Helmet } from 'react-helmet-async';
+
 
 export default function Home(){
     return(
@@ -18,6 +20,7 @@ export default function Home(){
             <AboutMe/>
             <MySkills/>
             <MyExperience/>
+            <MyResume/>
             <MyPortfolio/>
             <Footer/>
         </>

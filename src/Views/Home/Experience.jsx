@@ -3,7 +3,7 @@ export default function MyExperience(){
     <section id="MyExperience" className="experience--container" >
         <div className="experience-heading">
             <h1> EXPERIENCE</h1>
-            <p> I've been doing web development for about 3 years now, and I'm always eager to learn more in this fast paced industry.</p>
+            <p> I've been doing web development for about 2 years now, and I'm always eager to learn more in this fast paced industry.</p>
         </div>
         <div className="experience--section">
     <div className="technology-section">
