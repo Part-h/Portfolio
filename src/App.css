@@ -89,7 +89,7 @@ p {
 }
 .banner-search-select button{
   font-size: var(--16);
-  margin-top: 40px;
+  margin-top: 20px;
   z-index: 1;
   overflow: hidden;
   position: relative;
@@ -678,18 +678,18 @@ a.resume-btn:active {
     min-height: auto;
   }
   .navbar{
-    padding:7px 12px;
+    padding:7px 12px 0px 12px;
   }
   .hero--section{
-    height:700px;
+    height:770px;
   }
   .hero--section--content{
-    width:360px ;
-    font-size: 32px;
-    line-height: 50px;
+    width:420px ;
+    font-size: 40px;
+    line-height: 60px;
   }
   .hero--section--name{
-    max-width: 180px;
+    max-width: 240px;
   }
   .hero--section--title{
     max-width: 70px;
@@ -701,6 +701,13 @@ a.resume-btn:active {
   .about--section--content{
     text-align: center;
   }
+  .hero--section-description{
+    text-align: justify;
+    line-height: 25px; 
+  }
+  .ResumeSectionContent{
+    padding:80px
+  }
   .experience--container{
     padding: 80px 40px;
   }
@@ -708,12 +715,17 @@ a.resume-btn:active {
     gap:15px;
   }
   .experience--individual--image{
-    height: 72px;
+    height: 76px;
   }
   .experience--individual--image img {
-    width: 70%;
+    width: 100%;
   }
   .footer--container{
-    padding: 30px ;
+    padding: 0 30px 10px 30px;
+    gap:10px;
+  }
+  .footer--social--icon > ul{
+    margin-top:10px;
+    margin-bottom: 0px;
   }
 }

@@ -4,7 +4,7 @@
         "id": "1",
         "src": "./img/product-chain-1.png",
         "title": "Front-End",
-        "description": "I Love to build pages that come to life with whole layout that works in any device and just not a static websites."
+        "description": "I love to build pages that come to life with whole layout that works in any device and just not a static websites."
       },
       {
         "id": "2",
@@ -22,7 +22,7 @@
         "id": "4",
         "src": "./img/feather-pen-1.png",
         "title": "Webflow Development",
-        "description": "With expertise in Webflow's intuitive platform, I craft dynamic websites that not only meet but exceed client expectations, pushing the boundaries of what's possible in web development."
+        "description": "With expertise in webflow's intuitive platform, I craft dynamic websites that not only meet but exceed client expectations, pushing the boundaries of what's possible in web development."
       }
     ],
     "portfolio": [
