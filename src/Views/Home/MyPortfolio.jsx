@@ -1,3 +1,4 @@
+import { color } from "framer-motion";
 import data from "../../data/index.json";
 
 export default function MyPortfolio(){
@@ -12,6 +13,7 @@ export default function MyPortfolio(){
       <div className="portfolio--section--container">
         {data?.portfolio?.map((item, index) => (
           <div key={index} className="portfolio--section--card">
+            <a className="portfolio--section--card--anchor" href={item.href} target="blank" >
             <div className="portfolio--section--img">
               <img src={item.src} alt="Placeholder" />
             </div>
@@ -23,6 +25,7 @@ export default function MyPortfolio(){
                 <p className="text-md">{item.description}</p>
               </div>
             </div>
+            </a>
           </div>
         ))}
       </div>

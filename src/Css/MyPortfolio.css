@@ -69,6 +69,11 @@
   .portfolio--section--title {
     color: var(--heading-color);
   }
+  .portfolio--section--card--anchor{
+  pointer-events: none;
+  text-decoration: none;
+  color: black;
+  }
   
   /* Portfolio Style Ends */
   
