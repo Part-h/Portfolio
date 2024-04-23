@@ -12,7 +12,7 @@ export default function Home(){
     return(
         <>  
             <Helmet>
-<title>Parth Patel | Full Stack Developer | 2 Years Expertise</title>
+<title>Parth Patel | Full Stack Developer | 4 Years Expertise</title>
 <meta name='description' content='Parth Patel portfolio website based on ReactJs' />
 <link rel="icon" type="image/png" href="coding (1).ico" sizes="16x16" />
 </Helmet>

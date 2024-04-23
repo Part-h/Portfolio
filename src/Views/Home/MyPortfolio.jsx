@@ -13,7 +13,7 @@ export default function MyPortfolio(){
       <div className="portfolio--section--container">
         {data?.portfolio?.map((item, index) => (
           <div key={index} className="portfolio--section--card">
-            <a className="portfolio--section--card--anchor" href={item.href} target="blank" >
+            <a className="portfolio--section--card--anchor" href={item.href} >
             <div className="portfolio--section--img">
               <img src={item.src} alt="Placeholder" />
             </div>

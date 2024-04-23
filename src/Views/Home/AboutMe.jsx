@@ -13,7 +13,7 @@ function AboutMe() {
           <h1 className="about--section--heading">About Me</h1>
           <p className="hero--section-description">
             Embark on an exciting digital journey with me, worked as a Full
-            Stack Developer with over 2 years of experience. With a Master's
+            Stack Developer with over 4 years of experience. With a Master's
             degree from renowned and exposure to different cultures, I bring adaptability
             and a global perspective to my work. I excel at blending front-end
             design with back-end functionality, bringing digital projects to

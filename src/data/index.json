@@ -30,7 +30,7 @@
         "id": "1",
         "src": "./img/placeholder-image.png",
         "title": "Ahuse",
-        "href":"",
+        "href":"/",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
         
       },
@@ -38,13 +38,14 @@
         "id": "2",
         "src": "./img/project2.png",
         "title": "Anand Farm",
+        "href":"https://anandfarm.onrender.com/",
         "description": "E-commerce site connecting consumers with farm-fresh products, emphasizing sustainability and direct farmer-consumer relationships for a seamless shopping experience."
       },
       {
         "id": "3",
         "src": "./img/placeholder-image-2.png",
         "title": "Easy Rentn",
-        "href":"",
+        "href":"/",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
       }
     ]

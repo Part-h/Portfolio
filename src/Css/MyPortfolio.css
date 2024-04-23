@@ -70,7 +70,7 @@
     color: var(--heading-color);
   }
   .portfolio--section--card--anchor{
-  pointer-events: none;
+  cursor: default;
   text-decoration: none;
   color: black;
   }
