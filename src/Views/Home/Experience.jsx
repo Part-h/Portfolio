@@ -17,10 +17,11 @@ export default function MyExperience() {
       id="MyExperience"
       className="experience--container">
       <motion.div className="experience-heading"
-      ref={ref}
-      initial={{ x: '-100vw', opacity: 0 }}
-      animate={controls}
-      transition={{ duration: 3 }}
+      
+      // ref={ref}  
+      // initial={{ x: '-100vw', opacity: 0 }}
+      // animate={controls}
+      // transition={{ duration: 3 }}
       >
         <h1>EXPERIENCE</h1>
         <p>
